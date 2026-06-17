@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -176,7 +176,36 @@ h2{
     border-radius:12px;
     border:1px solid #333;
 }
+.contact-item{
+    background:#1f1f1f;
+    padding:22px;
+    border-radius:12px;
+    border:1px solid #333;
+    text-align:center;
+}
 
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    background:#1f1f1f;
+    color:white;
+    border:1px solid #444;
+    border-radius:8px;
+    margin-top:5px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    color:#999;
+    border-top:1px solid #333;
+}
 .project{
     padding:0;
     overflow:hidden;
@@ -406,6 +435,39 @@ footer{
 </section>
 
 </div>
+```html
+<section class="card" id="quote">
+    <h2>Request a Free Quote</h2>
+
+    <form action="mailto:northernshedsolutions@gmail.com" method="post" enctype="text/plain">
+
+        <p>Name</p>
+        <input type="text" name="Name" required>
+
+        <br><br>
+
+        <p>Phone Number</p>
+        <input type="tel" name="Phone" required>
+
+        <br><br>
+
+        <p>Location</p>
+        <input type="text" name="Location">
+
+        <br><br>
+
+        <p>What service do you need?</p>
+        <textarea name="Job Details" rows="6" required></textarea>
+
+        <br><br>
+
+        <button type="submit" class="btn">
+            Request Quote
+        </button>
+
+    </form>
+</section>
+```
 
 <footer>
     <p>© 2026 Northern Shed Solutions | Shed, Barn & Carport Specialists Victoria</p>
